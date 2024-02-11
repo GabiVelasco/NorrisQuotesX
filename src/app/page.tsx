@@ -6,7 +6,7 @@ export default async function Home() {
   const visitors = await prisma.visitorCounter.findMany();
   return (
     <main>
-    <h1 className="font-bold">Todos</h1>
+    <h1 className="font-bold">Visitors</h1>
     <ul>
       {visitors.map((visitorCounter) => (
         <li key={visitorCounter.id}>{visitorCounter.visitorNumber}</li>
