@@ -1,9 +1,9 @@
-
-import Image from "next/image";
 import prisma from "./utils/prisma";
 import "./quotes/page"
 import { Zitat, Button } from "./quotes/page";
 import "./header/page"
+import Header from "./header/page";
+import Footer from "./footer/page";
 
 export default async function Home() {
   // Increment visitor number in the database
@@ -23,8 +23,11 @@ export default async function Home() {
   const sumVisitorNumbers = visitors.reduce((acc, visitor) => acc + visitor.visitorNumber, 0);
 
   return (
-   
+  
+
     <main>
+       <Header />
+       
       <h1 className="font-bold">Visitors</h1>
       <Zitat />
       <ul>
@@ -33,6 +36,8 @@ export default async function Home() {
         ))}
         Total: {sumVisitorNumbers}
       </ul>
+
+      <Footer />
     </main>
   );
 }
