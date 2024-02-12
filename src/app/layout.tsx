@@ -5,6 +5,7 @@
  * @param {React.ReactNode} children The child components to be rendered within the layout.
  * @returns {ReactElement} The root layout of the application.
  */
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
