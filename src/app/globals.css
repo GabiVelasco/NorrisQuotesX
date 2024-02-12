@@ -1,3 +1,10 @@
+/**
+ * Global styles for the application.
+ * These styles include Tailwind CSS utilities and custom styling for various elements.
+ * The color scheme of the application is defined based on the user's preference for light or dark mode.
+ * @returns {CSSStyleSheet} The global CSS stylesheet.
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
