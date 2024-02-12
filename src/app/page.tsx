@@ -3,7 +3,7 @@ import Image from "next/image";
 import prisma from "./utils/prisma";
 import "./quotes/page"
 import { Zitat, Button } from "./quotes/page";
-import "./header/header"
+import "./header/page"
 
 export default async function Home() {
   // Increment visitor number in the database
