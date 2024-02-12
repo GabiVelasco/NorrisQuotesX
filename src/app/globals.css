@@ -16,7 +16,7 @@
   }
 }
 
-body {
+body, html, :root {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,6 +24,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
+    min-height: 100%;
+    border-width: 0;
+    margin:0;
+    padding: 0;
+    border: 0;
 }
 
 @layer utilities {
@@ -31,3 +37,79 @@ body {
     text-wrap: balance;
   }
 }
+
+.container {
+ 
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+header {
+  padding: 20px;
+}
+
+.nav {
+  max-width: 80%;
+  color: black;
+  padding-right: 20px;
+}
+
+/* global.css or tailwind.css */
+footer {
+  height: 150px;
+  position: absolute sticky;
+  bottom: 0;
+  left: 0;
+}
+
+/* Nav */
+.kontakt {
+  background: black;
+  border-radius: 30px;
+  color: white;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+.margin-right {
+  margin-right: 10%;
+}
+
+.image {
+  padding: 30px;
+  margin-top: 20px;
+
+}
+.symbol {
+  padding: 20px;
+}
+
+main {
+  justify-content: center;
+}
+
+.quotes {
+  padding-top: 20px;
+  background: white;
+  border-radius: 30px;
+  color: black;
+  margin-top: -10px;
+  padding: 10px;
+  
+}
+
+.quote-container {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align:left;
+}
+
+.visitorsCounter {
+  border-radius: 30%;
+  border-width: 1px;
+  padding: 20px;
+  justify-content: center;
+}
+
+
